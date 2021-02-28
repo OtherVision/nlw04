@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## NLW#04 - Projeto MOVEIT
+
+Projeto criado durante a Next Level Week #04 - Trilha ReactJS - da Rocketseat. <br>
+Aplicação é baseada na técnica Pomodoro, que consiste em um cronômetro que é utilizado para dividir seu dia de trabalho em pedaços de 25 minutos separados por intervalos de cinco minutos. Assim, a cada quatro pedaços de 25 minutos, é feita uma pausa maior de 20 a 30 minutos.<br>
+O método tem como base a ideia de que pausas frequentes podem intensificar a agilidade mental. Dessa forma, o temporizador impõe certo senso de urgência.Então, em vez de sentir que você tem um tempo infinito no dia de trabalho para fazer as coisas e desperdiçá-lo com pequenas distrações, você saberá que só tem 25 minutos para fazer o máximo de progresso possível em uma tarefa.<br>
 
 ## Getting Started
 
-First, run the development server:
+O primeiro passo é instalar o Node.js, que vem acompanhado do NPM. <br>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Para o Windows utilizaremos o gerenciador de pacotes Chocolatey<br>
+Abra o Powershell<br>
+Execute o comando:<br>
+Get-ExecutionPolicy<br>
+Caso ele retorne `Restricted`, execute o comando:<br>
+Set-ExecutionPolicy RemoteSigned<br>
+E escolha a opção `[A] Sim para Todos`<br>
+Caso o comando acima apresente erro, tente usar:<br>
+`Set-ExecutionPolicy Bypass -Scope Process`<br>
+Verifique se alteração de permissão ocorreu com sucesso executando novamente o comando:<br>
+Get-ExecutionPolicy<br><br>
+Alterada a permissão, basta instalar o **Chocolatey** com o comando:<br>
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))<br><br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Após o fim da instalação, feche e abra o powershell como administrador novamente e execute:<br>
+choco -v<br>
+Caso ele retorne a versão do Chocolatey, a instalação foi um sucesso. Para finalizar, basta instalar a versão LTS mais recente do Node com o seguinte comando:<br>
+cinst nodejs-lts<br>
+E escolha a opção [A]ll - yes to all<br>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Após o fim da instalação, feche e abra o powershell como administrador novamente e execute:<br>
+node -v<br>
+npm -v<br>
+Caso retorne as versões do Node e npm, sua instalação foi um sucesso.<br><br>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+O segundo passo é instalar o yarn. <br>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Para instalar o Yarn 1 no Windows siga os seguintes passos, execute o comando no Powershell (como admin):<br>
+cinst yarn<br>
+E escolha a opção `[A]ll - yes to all`. <br>
+Feche e abra o terminal novamente, em seguida rode o comando:<br>
+yarn --version<br>
+Caso retorne a versão do Yarn (acima de 1.0, abaixo de 2.0), a instalação ocorreu com sucesso.<br>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+yarn create react-app moveit --template=typescript<br>
+cd moveit<br>
+git clone https://github.com/OtherVision/nlw04.git<br>
