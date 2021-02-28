@@ -1,14 +1,17 @@
-## NLW#04 - Projeto MOVEIT
+## NLW#04 - Projeto MOVEIT :rocket:
 
 Projeto criado durante a Next Level Week #04 - Trilha ReactJS - da Rocketseat. <br>
 Aplicação é baseada na técnica Pomodoro, que consiste em um cronômetro que é utilizado para dividir seu dia de trabalho em pedaços de 25 minutos separados por intervalos de cinco minutos. Assim, a cada quatro pedaços de 25 minutos, é feita uma pausa maior de 20 a 30 minutos.<br>
 O método tem como base a ideia de que pausas frequentes podem intensificar a agilidade mental. Dessa forma, o temporizador impõe certo senso de urgência.Então, em vez de sentir que você tem um tempo infinito no dia de trabalho para fazer as coisas e desperdiçá-lo com pequenas distrações, você saberá que só tem 25 minutos para fazer o máximo de progresso possível em uma tarefa.<br>
 
-## Getting Started
+Projeto proposto no Figma:<br>
+https://www.figma.com/file/vRbW1u0CEZuG2zE6bU5qLg/Move.it-2.0/duplicate?node-id=160%3A2761
 
-O primeiro passo é instalar o Node.js, que vem acompanhado do NPM. <br>
+# Getting Started :checkered_flag:
 
-Para o Windows utilizaremos o gerenciador de pacotes Chocolatey<br>
+:pushpin: Instalar o Node.js, que vem acompanhado do NPM. <br>
+
+Para o Windows utilizaremos o gerenciador de pacotes Chocolatey.<br><br>
 Abra o Powershell<br>
 Execute o comando:<br>
 Get-ExecutionPolicy<br>
@@ -33,15 +36,17 @@ node -v<br>
 npm -v<br>
 Caso retorne as versões do Node e npm, sua instalação foi um sucesso.<br><br>
 
-O segundo passo é instalar o yarn. <br>
+:pushpin: Instalar o yarn. <br>
 
-Para instalar o Yarn 1 no Windows siga os seguintes passos, execute o comando no Powershell (como admin):<br>
+Para instalar o Yarn no Windows siga os seguintes passos, execute o comando no Powershell (como admin):<br>
 cinst yarn<br>
 E escolha a opção `[A]ll - yes to all`. <br>
 Feche e abra o terminal novamente, em seguida rode o comando:<br>
 yarn --version<br>
 Caso retorne a versão do Yarn (acima de 1.0, abaixo de 2.0), a instalação ocorreu com sucesso.<br>
 
+:pushpin: Criar projeto React<br>
 yarn create react-app moveit --template=typescript<br>
-cd moveit<br>
+
+:pushpin: Clonar repositorio<br>
 git clone https://github.com/OtherVision/nlw04.git<br>
